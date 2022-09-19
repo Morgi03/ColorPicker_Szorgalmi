@@ -10,24 +10,32 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_below="@id/rangeRed"
+          app:labelBehavior="gone"
           android:id="@+id/rangeGreen"
-          android:valueFrom="0.0"
-          android:valueTo="255.0"
+          android:valueFrom="0"
+          android:valueTo="255"
+          android:value="0"
           />
-      <com.google.android.material.slider.RangeSlider
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:id="@+id/rangeBlue"
-          android:valueFrom="0.0"
-          android:valueTo="255.0"
-          android:layout_below="@id/rangeGreen"
-          />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/rangeBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rangeGreen"
+        app:labelBehavior="gone"
+        android:value="0"
+        android:valueFrom="0"
+        android:valueTo="255" />
    <com.google.android.material.slider.RangeSlider
        android:id="@+id/rangeRed"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:valueFrom="0.0"
-       android:valueTo="255.0" />
+       app:labelBehavior="gone"
+       android:valueFrom="0"
+       android:valueTo="255"
+       android:value="0"
+       />
+
 
    <TextView
        android:layout_width="wrap_content"
@@ -62,5 +70,16 @@
        android:layout_below="@id/bluetext"
        android:background="@color/black"
        android:id="@+id/framelayoutszin"
-       />
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="(0,0,0)"
+           android:textColor="@color/white"
+           android:textSize="40sp"
+           android:layout_gravity="center"
+           android:textAlignment="center"
+           android:id="@+id/layouttext"
+           />
+   </FrameLayout>
 </RelativeLayout>
