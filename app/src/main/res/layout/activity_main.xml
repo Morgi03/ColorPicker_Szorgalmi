@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+      <com.google.android.material.slider.RangeSlider
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/rangeRed"
+          android:id="@+id/rangeGreen"
+          android:valueFrom="0.0"
+          android:valueTo="255.0"
+          />
+      <com.google.android.material.slider.RangeSlider
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/rangeBlue"
+          android:valueFrom="0.0"
+          android:valueTo="255.0"
+          android:layout_below="@id/rangeGreen"
+          />
+   <com.google.android.material.slider.RangeSlider
+       android:id="@+id/rangeRed"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:valueFrom="0.0"
+       android:valueTo="255.0" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/redtext"
+       android:layout_below="@id/rangeBlue"
+       android:text="Red: 0"
+       android:textSize="35sp"
+       android:textColor="@color/black"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/greentext"
+       android:layout_below="@id/redtext"
+       android:text="Green: 0"
+       android:textSize="35sp"
+       android:textColor="@color/black"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/bluetext"
+       android:layout_below="@id/greentext"
+       android:text="Blue: 0"
+       android:textSize="35sp"
+       android:textColor="@color/black"
+       />
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="200sp"
+       android:layout_below="@id/bluetext"
+       android:background="@color/black"
+       android:id="@+id/framelayoutszin"
+       />
+</RelativeLayout>
